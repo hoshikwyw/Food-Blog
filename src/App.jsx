@@ -6,11 +6,15 @@ import { Route, Routes } from "react-router-dom";
 import Meals from "./pages/Meals";
 import Detail from "./pages/Detail";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div className=" overflow-hidden">
       <Navbar />
+      <div>
+        <ScrollToTop />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/meals" element={<Meals />} />

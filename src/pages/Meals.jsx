@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ScrollToTop from "../components/ScrollToTop";
 
 const Meals = () => {
   const [meals, setMeals] = useState([]);
@@ -19,9 +18,7 @@ const Meals = () => {
   };
   return (
     <div className=" w-[96%] mx-auto">
-      <div className="">
-        <ScrollToTop />
-      </div>
+      
       <div className=" text-black flex flex-wrap gap-8 justify-center">
         {meals?.map((meal) => (
           <div
@@ -31,7 +28,7 @@ const Meals = () => {
               className="
                flex flex-col">
               <img src={meal?.strMealThumb} className=" w-cover h-60" alt="" />
-              <h2 className=" text-xl font-bold my-3 tracking-wider">
+              <h2 className=" text-xl font-bold my-3 tracking-wider truncate ... ">
                 {meal?.strMeal}
               </h2>
               <h2 className=" font-semibold ">

@@ -9,14 +9,16 @@ const Contact = () => {
         <h2 className=" text-2xl font-semibold tracking-widest font-serif text-center">
           Contact Me
         </h2>
-        <p className=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p className=" text-center font-semibold tracking-wider text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
         <div>
-          <div>
-            <h2>
-              address : <span>Lorem 15 Str., 4844, Ipsum, State, UK</span>
+          <div className=" ps-5">
+            <h2 >
+              <span className=" uppercase font-semibold text-lg">address :</span> <span className=" text-slate-400 italic">Lorem 15 Str., 4844, Ipsum, State, UK</span>
             </h2>
-            <h2>
-              phone : <span> +30-2106019311</span>
+            <h2 >
+              <span className=" uppercase font-semibold text-lg"> phone :</span> <span className=" text-slate-400 italic"> +30-2106019311</span>
             </h2>
           </div>
         </div>
@@ -64,10 +66,12 @@ const Contact = () => {
                 className="block text-gray-500 italic mb-2">
                 Your Message
               </label>
-              <textarea className =" resize border rounded px-3 py-2 focus:outline-yellow-200 focus:outline-none"></textarea>
+              <textarea className=" resize border rounded px-3 py-2 focus:outline-yellow-200 focus:outline-none"></textarea>
             </div>
           </form>
-          <button className=" uppercase mx-5 my-5 bg-slate-400 text-white font-semibold px-3 py-1 rounded hover:bg-yellow-500 ">send message</button>
+          <button className=" uppercase mx-5 my-5 bg-slate-400 text-white font-semibold px-3 py-1 rounded hover:bg-yellow-500 ">
+            send message
+          </button>
         </div>
       </div>
       {/* right side  */}
